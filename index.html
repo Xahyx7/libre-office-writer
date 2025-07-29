@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibreOffice Writer Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-intro-overlay" id="logoIntro">
+        <div class="logo-container">
+            <h1 class="logo-text">
+                <span class="libre">Libre</span><span class="writer">Writer</span>
+            </h1>
+            <div class="logo-subtitle">Master Your Documents</div>
+        </div>
+    </div>
+
+    <div class="secondary-intro-overlay" id="secondaryIntro">
+        <div class="secondary-intro-content">
+            <h2 class="main-title">LibreOffice Writer</h2>
+            <p class="subtitle-text">All You Need to Know</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic-intro-overlay" id="topicIntro">
+        <div class="topic-intro-content">
+            <div class="topic-icon-large" id="topicIconLarge">🎨</div>
+            <h2 class="topic-title" id="topicTitle">Sidebar & Styles</h2>
+            <p class="topic-subtitle" id="topicSubtitle">All types of styles in LibreOffice Writer</p>
+            <div class="topic-loading-bar">
+                <div class="topic-loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <header class="main-header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="nav-logo" onclick="showHome()">
+                        <span class="nav-libre">Libre</span><span class="nav-writer">Writer</span>
+                    </div>
+                    <div class="back-button" id="backButton" onclick="showHome()">
+                        ← Back to Topics
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="page-content" id="homePage">
+            <section class="hero-section">
+                <h1>Explore LibreOffice Writer Topics</h1>
+                <p>Click on any topic to learn everything about LibreOffice Writer for CBSE Class 10</p>
+            </section>
+
+            <section class="topics-grid">
+                <div class="topic-card" onclick="showTopic('sidebarStyles', '🎨', 'Sidebar & Styles', 'All types of styles in LibreOffice Writer')">
+                    <div class="card-background"></div>
+                    <div class="topic-icon">🎨</div>
+                    <h3>Sidebar & Styles</h3>
+                    <p>All types of styles in LibreOffice Writer</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="topic-card" onclick="showTopic('imageOperations', '🖼️', 'Image Operations', 'Working with images in Writer documents')">
+                    <div class="card-background"></div>
+                    <div class="topic-icon">🖼️</div>
+                    <h3>Image Operations</h3>
+                    <p>Working with images in Writer documents</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="topic-card" onclick="showTopic('objectDrawing', '✏️', 'Object Drawing', 'Drawing tools and objects in Writer')">
+                    <div class="card-background"></div>
+                    <div class="topic-icon">✏️</div>
+                    <h3>Object Drawing</h3>
+                    <p>Drawing tools and objects in Writer</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="topic-card" onclick="showTopic('imageTextRelationship', '📐', 'Image-Text Relationship', 'Arrange, align, anchor and page wrapping')">
+                    <div class="card-background"></div>
+                    <div class="topic-icon">📐</div>
+                    <h3>Image-Text Relationship</h3>
+                    <p>Arrange, align, anchor and page wrapping</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="topic-card" onclick="showTopic('templates', '📋', 'Templates', 'Creating and using document templates')">
+                    <div class="card-background"></div>
+                    <div class="topic-icon">📋</div>
+                    <h3>Templates</h3>
+                    <p>Creating and using document templates</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="topic-card" onclick="showTopic('tableOfContents', '📚', 'Table of Contents', 'Creating automatic table of contents')">
+                    <div class="card-background"></div>
+                    <div class="topic-icon">📚</div>
+                    <h3>Table of Contents</h3>
+                    <p>Creating automatic table of contents</p>
+                    <div class="card-glow"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page-content topic-page" id="sidebarStyles">
+            <div class="topic-content">
+                <h1>Sidebar & Styles in LibreOffice Writer</h1>
+                
+                <section class="content-section">
+                    <h2>What are Styles?</h2>
+                    <p>Styles in LibreOffice Writer are predefined formatting settings that help maintain consistency throughout documents. Instead of manually formatting each element, styles allow you to apply consistent formatting with just one click.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>💡 Benefits of Using Styles</h3>
+                        <ul>
+                            <li><strong>Consistency:</strong> Ensures uniform formatting throughout the document</li>
+                            <li><strong>Time-saving:</strong> Apply complex formatting instantly</li>
+                            <li><strong>Easy updates:</strong> Change formatting globally by modifying the style</li>
+                            <li><strong>Professional appearance:</strong> Creates well-structured documents</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Accessing the Styles Sidebar</h2>
+                    <p>The Styles sidebar is the primary tool for managing styles in LibreOffice Writer. You can access it through multiple methods:</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>Method 1: Function Key</h4>
+                            <p>Press <strong>F11</strong> key (⌘+T on macOS)</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Method 2: Menu Bar</h4>
+                            <p>Go to <strong>View > Styles</strong></p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Method 3: Sidebar</h4>
+                            <p>Click on the <strong>Styles icon</strong> in sidebar</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Method 4: Right-click</h4>
+                            <p>Right-click and select <strong>Styles</strong></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Six Categories of Styles</h2>
+                    
+                    <div class="style-categories">
+                        <div class="style-category">
+                            <h3>📄 1. Page Styles</h3>
+                            <p><strong>Purpose:</strong> Controls page layout, margins, headers, footers, and page orientation</p>
+                            <p><strong>Examples:</strong> Default page, First page, Left page, Right page</p>
+                            <p><strong>Usage:</strong> Different page layouts within the same document</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>📝 2. Paragraph Styles</h3>
+                            <p><strong>Purpose:</strong> Formats entire paragraphs including font, spacing, indentation, and borders</p>
+                            <p><strong>Examples:</strong> Heading 1-10, Text Body, Caption, Title</p>
+                            <p><strong>Shortcuts:</strong> Ctrl+0 (Text Body), Ctrl+1 (Heading 1), Ctrl+2 (Heading 2)</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>🔤 3. Character Styles</h3>
+                            <p><strong>Purpose:</strong> Formats selected text within paragraphs</p>
+                            <p><strong>Examples:</strong> Emphasis, Strong Emphasis, Source Text</p>
+                            <p><strong>Application:</strong> Apply to selected words or phrases only</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>🖼️ 4. Frame Styles</h3>
+                            <p><strong>Purpose:</strong> Formats text boxes, images, and other objects</p>
+                            <p><strong>Examples:</strong> Formula, Graphics, OLE objects</p>
+                            <p><strong>Usage:</strong> Consistent formatting for inserted objects</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>📋 5. List Styles</h3>
+                            <p><strong>Purpose:</strong> Formats numbered and bulleted lists</p>
+                            <p><strong>Examples:</strong> Numbering 1-5, Bullet lists</p>
+                            <p><strong>Features:</strong> Custom numbering, bullet styles, indentation</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>📊 6. Table Styles</h3>
+                            <p><strong>Purpose:</strong> Formats tables with predefined layouts</p>
+                            <p><strong>Examples:</strong> Table Header, Table Contents</p>
+                            <p><strong>Features:</strong> Cell borders, background colors, text alignment</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Working with Styles</h2>
+                    
+                    <h3>Applying Styles</h3>
+                    <div class="step-by-step">
+                        <div class="step">
+                            <h4>Step 1: Select Content</h4>
+                            <p>Place cursor in paragraph or select text to format</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 2: Open Styles Panel</h4>
+                            <p>Press F11 or click Styles in sidebar</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 3: Choose Style Category</h4>
+                            <p>Click on appropriate style category icon</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 4: Apply Style</h4>
+                            <p>Double-click on desired style name</p>
+                        </div>
+                    </div>
+
+                    <h3>Creating Custom Styles</h3>
+                    <ol>
+                        <li>Format text manually with desired appearance</li>
+                        <li>Select the formatted text</li>
+                        <li>Right-click in Styles panel</li>
+                        <li>Choose "New Style from Selection"</li>
+                        <li>Give it a meaningful name</li>
+                    </ol>
+
+                    <h3>Modifying Existing Styles</h3>
+                    <p>Right-click on any style name and select "Modify" to change fonts, colors, spacing, and other formatting options. All text using that style will automatically update.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-content topic-page" id="imageOperations">
+            <div class="topic-content">
+                <h1>Image Operations in LibreOffice Writer</h1>
+                
+                <section class="content-section">
+                    <h2>Inserting Images</h2>
+                    <p>LibreOffice Writer supports various image formats and insertion methods for creating visually appealing documents.</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>Method 1: Menu Insert</h4>
+                            <p>Go to <strong>Insert > Image</strong> and browse for your file</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Method 2: Drag & Drop</h4>
+                            <p>Drag image files directly from file manager into document</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Method 3: Copy & Paste</h4>
+                            <p>Copy image from web browser or other applications</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Method 4: Scanner/Camera</h4>
+                            <p>Insert > Image > Scan to import directly from devices</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>📁 Supported Image Formats</h3>
+                        <ul>
+                            <li><strong>Raster:</strong> JPEG, PNG, GIF, BMP, TIFF, WebP</li>
+                            <li><strong>Vector:</strong> SVG, WMF, EMF</li>
+                            <li><strong>Other:</strong> PSD (Photoshop), XPM, PCX</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Basic Image Editing</h2>
+                    
+                    <h3>Resizing Images</h3>
+                    <div class="step-by-step">
+                        <div class="step">
+                            <h4>Manual Resize</h4>
+                            <p>Click image and drag corner handles. Hold Shift to maintain aspect ratio</p>
+                        </div>
+                        <div class="step">
+                            <h4>Precise Resize</h4>
+                            <p>Right-click > Properties > Type tab for exact dimensions</p>
+                        </div>
+                        <div class="step">
+                            <h4>Scale Percentage</h4>
+                            <p>Set width/height as percentages of original size</p>
+                        </div>
+                    </div>
+
+                    <h3>Cropping Images</h3>
+                    <ol>
+                        <li>Select the image</li>
+                        <li>Right-click and choose "Crop"</li>
+                        <li>Drag the crop handles to select area</li>
+                        <li>Press Enter to apply or Escape to cancel</li>
+                    </ol>
+
+                    <h3>Image Filters and Effects</h3>
+                    <p>Access through <strong>Format > Image</strong> menu:</p>
+                    <ul>
+                        <li><strong>Color adjustments:</strong> Brightness, contrast, gamma, transparency</li>
+                        <li><strong>Artistic filters:</strong> Charcoal, mosaic, pop art, relief</li>
+                        <li><strong>Color effects:</strong> Grayscale, sepia, invert, posterize</li>
+                        <li><strong>Blur effects:</strong> Motion blur, radial blur</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Advanced Image Operations</h2>
+                    
+                    <h3>Image Compression</h3>
+                    <p>Reduce file size while maintaining quality:</p>
+                    <ol>
+                        <li>Select image and right-click</li>
+                        <li>Choose "Compress Graphic"</li>
+                        <li>Adjust compression level and DPI</li>
+                        <li>Preview changes before applying</li>
+                    </ol>
+
+                    <h3>Adding Captions</h3>
+                    <ol>
+                        <li>Select the image</li>
+                        <li>Go to Insert > Caption</li>
+                        <li>Choose category (Figure, Table, etc.)</li>
+                        <li>Write caption text</li>
+                        <li>Set numbering and position</li>
+                    </ol>
+
+                    <h3>Image Hyperlinks</h3>
+                    <p>Make images clickable by adding hyperlinks:</p>
+                    <ol>
+                        <li>Select the image</li>
+                        <li>Press Ctrl+K or Insert > Hyperlink</li>
+                        <li>Enter URL or link to document section</li>
+                        <li>Set target frame if needed</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-content topic-page" id="objectDrawing">
+            <div class="topic-content">
+                <h1>Object Drawing in LibreOffice Writer</h1>
+                
+                <section class="content-section">
+                    <h2>Drawing Toolbar</h2>
+                    <p>LibreOffice Writer includes comprehensive drawing tools for creating shapes, diagrams, and illustrations directly within documents.</p>
+                    
+                    <h3>Accessing Drawing Tools</h3>
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>View Menu</h4>
+                            <p>Go to <strong>View > Toolbars > Drawing</strong></p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Right-click Toolbar</h4>
+                            <p>Right-click any toolbar and select "Drawing"</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Insert Menu</h4>
+                            <p><strong>Insert > Shape</strong> for quick access</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Basic Drawing Objects</h2>
+                    
+                    <div class="style-categories">
+                        <div class="style-category">
+                            <h3>📐 Lines and Arrows</h3>
+                            <p><strong>Tools:</strong> Line, arrow, dimension line, connector</p>
+                            <p><strong>Features:</strong> Start/end markers, line styles, thickness</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>🔵 Basic Shapes</h3>
+                            <p><strong>Shapes:</strong> Rectangle, ellipse, triangle, diamond</p>
+                            <p><strong>Special:</strong> Rounded rectangles, perfect circles (hold Shift)</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>⭐ Symbol Shapes</h3>
+                            <p><strong>Collection:</strong> Stars, banners, brackets, blocks</p>
+                            <p><strong>Customizable:</strong> Adjustable points and curves</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>📊 Flowchart Objects</h3>
+                            <p><strong>Elements:</strong> Process, decision, terminator, connector</p>
+                            <p><strong>Usage:</strong> Business processes, algorithms, workflows</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>💬 Callouts</h3>
+                            <p><strong>Types:</strong> Speech bubbles, thought clouds, labels</p>
+                            <p><strong>Function:</strong> Annotations and explanations</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Object Formatting</h2>
+                    
+                    <h3>Fill Properties</h3>
+                    <ul>
+                        <li><strong>Color Fill:</strong> Solid colors from palette or custom</li>
+                        <li><strong>Gradient Fill:</strong> Linear, radial, elliptical, square gradients</li>
+                        <li><strong>Bitmap Fill:</strong> Pattern fills and textures</li>
+                        <li><strong>Hatch Fill:</strong> Line patterns at various angles</li>
+                    </ul>
+
+                    <h3>Line Properties</h3>
+                    <ul>
+                        <li><strong>Style:</strong> Solid, dashed, dotted, custom patterns</li>
+                        <li><strong>Width:</strong> Thickness from 0.01cm to 5cm</li>
+                        <li><strong>Color:</strong> Any color including transparency</li>
+                        <li><strong>Arrows:</strong> Start and end arrow styles</li>
+                    </ul>
+
+                    <h3>Shadow and 3D Effects</h3>
+                    <p>Add depth and dimension to objects:</p>
+                    <ol>
+                        <li>Select object and right-click</li>
+                        <li>Choose "Area" or "Line" from context menu</li>
+                        <li>Go to "Shadow" or "3D" tab</li>
+                        <li>Adjust distance, blur, and transparency</li>
+                    </ol>
+                </section>
+
+                <section class="content-section">
+                    <h2>Advanced Object Operations</h2>
+                    
+                    <h3>Grouping Objects</h3>
+                    <ol>
+                        <li>Select multiple objects (Ctrl+click or drag selection)</li>
+                        <li>Right-click and choose "Group > Group"</li>
+                        <li>Move and format as single unit</li>
+                        <li>Ungroup with "Group > Ungroup"</li>
+                    </ol>
+
+                    <h3>Combining Shapes</h3>
+                    <p>Create complex shapes by combining simple ones:</p>
+                    <ul>
+                        <li><strong>Merge:</strong> Unite overlapping areas</li>
+                        <li><strong>Subtract:</strong> Remove overlapping areas</li>
+                        <li><strong>Intersect:</strong> Keep only overlapping areas</li>
+                    </ul>
+
+                    <h3>Text in Objects</h3>
+                    <ol>
+                        <li>Double-click any drawing object</li>
+                        <li>Type text directly inside the shape</li>
+                        <li>Format text independently of object</li>
+                        <li>Click outside to exit text editing mode</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-content topic-page" id="imageTextRelationship">
+            <div class="topic-content">
+                <h1>Image-Text Relationship</h1>
+                
+                <section class="content-section">
+                    <h2>Understanding Anchoring</h2>
+                    <p>Anchoring determines how images behave when text changes or when the document is edited. The anchor point controls the image's position relative to text elements.</p>
+                    
+                    <div class="style-categories">
+                        <div class="style-category">
+                            <h3>📄 As Character</h3>
+                            <p><strong>Behavior:</strong> Image sits on text baseline like a large character</p>
+                            <p><strong>Movement:</strong> Flows with text, no independent positioning</p>
+                            <p><strong>Use case:</strong> Inline icons, mathematical symbols</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>🔗 To Character</h3>
+                            <p><strong>Behavior:</strong> Image moves with specific character but can float</p>
+                            <p><strong>Movement:</strong> Follows anchor character when text reflows</p>
+                            <p><strong>Use case:</strong> Annotations, side notes</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>📝 To Paragraph</h3>
+                            <p><strong>Behavior:</strong> Image stays with paragraph (default setting)</p>
+                            <p><strong>Movement:</strong> Moves when paragraph moves to new page</p>
+                            <p><strong>Use case:</strong> Most common for document images</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>📄 To Page</h3>
+                            <p><strong>Behavior:</strong> Image fixed to specific page position</p>
+                            <p><strong>Movement:</strong> Stays in exact location regardless of text</p>
+                            <p><strong>Use case:</strong> Letterheads, watermarks, logos</p>
+                        </div>
+
+                        <div class="style-category">
+                            <h3>🖼️ To Frame</h3>
+                            <p><strong>Behavior:</strong> Image anchored to text frame or text box</p>
+                            <p><strong>Movement:</strong> Moves with the containing frame</p>
+                            <p><strong>Use case:</strong> Complex layouts, newsletters</p>
+                        </div>
+                    </div>
+
+                    <h3>Changing Anchor Type</h3>
+                    <ol>
+                        <li>Select the image</li>
+                        <li>Right-click and choose "Anchor"</li>
+                        <li>Select desired anchor type from submenu</li>
+                        <li>Notice anchor symbol changes in document</li>
+                    </ol>
+                </section>
+
+                <section class="content-section">
+                    <h2>Text Wrapping Options</h2>
+                    <p>Text wrapping controls how text flows around images and objects.</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>No Wrap</h4>
+                            <p>Text appears only above and below image</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Page Wrap</h4>
+                            <p>Text flows around all sides of image</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Optimal Wrap</h4>
+                            <p>Text wraps on side with more space</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Left/Right Only</h4>
+                            <p>Text appears on specified side only</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Through</h4>
+                            <p>Text can overlap transparent areas</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>In Background</h4>
+                            <p>Image behind text (watermark effect)</p>
+                        </div>
+                    </div>
+
+                    <h3>Setting Text Wrap</h3>
+                    <ol>
+                        <li>Select image and right-click</li>
+                        <li>Choose "Wrap" from context menu</li>
+                        <li>Select desired wrapping option</li>
+                        <li>Adjust spacing if needed</li>
+                    </ol>
+                </section>
+
+                <section class="content-section">
+                    <h2>Alignment and Positioning</h2>
+                    
+                    <h3>Manual Positioning</h3>
+                    <ul>
+                        <li><strong>Drag to move:</strong> Click and drag image to desired location</li>
+                        <li><strong>Arrow keys:</strong> Fine positioning with keyboard arrows</li>
+                        <li><strong>Snap to grid:</strong> Enable View > Snap Guides for precision</li>
+                    </ul>
+
+                    <h3>Automatic Alignment</h3>
+                    <div class="step-by-step">
+                        <div class="step">
+                            <h4>Horizontal Alignment</h4>
+                            <p>Left, Center, Right, From Left (custom position)</p>
+                        </div>
+                        <div class="step">
+                            <h4>Vertical Alignment</h4>
+                            <p>Top, Middle, Bottom, From Top (custom position)</p>
+                        </div>
+                        <div class="step">
+                            <h4>Access Method</h4>
+                            <p>Right-click > Properties > Type tab > Position section</p>
+                        </div>
+                    </div>
+
+                    <h3>Spacing and Margins</h3>
+                    <p>Control distance between image and surrounding text:</p>
+                    <ul>
+                        <li><strong>Before/After:</strong> Horizontal spacing on left and right</li>
+                        <li><strong>Above/Below:</strong> Vertical spacing on top and bottom</li>
+                        <li><strong>Synchronize:</strong> Use same value for all sides</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Advanced Arrangement</h2>
+                    
+                    <h3>Layer Management</h3>
+                    <p>Control stacking order when objects overlap:</p>
+                    <ul>
+                        <li><strong>Bring to Front:</strong> Move to top layer</li>
+                        <li><strong>Send to Back:</strong> Move to bottom layer</li>
+                        <li><strong>Bring Forward:</strong> Move up one layer</li>
+                        <li><strong>Send Backward:</strong> Move down one layer</li>
+                    </ul>
+
+                    <h3>Protection Settings</h3>
+                    <p>Prevent accidental changes to positioned images:</p>
+                    <ol>
+                        <li>Right-click image > Properties</li>
+                        <li>Go to Options tab</li>
+                        <li>Check "Position" to lock position</li>
+                        <li>Check "Size" to lock dimensions</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-content topic-page" id="templates">
+            <div class="topic-content">
+                <h1>Templates in LibreOffice Writer</h1>
+                
+                <section class="content-section">
+                    <h2>What are Templates?</h2>
+                    <p>Templates are pre-designed document layouts that serve as starting points for new documents. They contain predefined styles, formatting, placeholder text, and structural elements that ensure consistency across similar documents.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>🎯 Benefits of Using Templates</h3>
+                        <ul>
+                            <li><strong>Time-saving:</strong> Skip repetitive setup and formatting</li>
+                            <li><strong>Consistency:</strong> Maintain uniform appearance across documents</li>
+                            <li><strong>Professional quality:</strong> Well-designed layouts and styles</li>
+                            <li><strong>Easy customization:</strong> Modify once, use everywhere</li>
+                            <li><strong>Collaboration:</strong> Share templates with team members</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Built-in Templates</h2>
+                    <p>LibreOffice Writer comes with various pre-installed templates for common document types.</p>
+                    
+                    <h3>Accessing Templates</h3>
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>Start Center</h4>
+                            <p>Click "Templates" in LibreOffice Start Center</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>File Menu</h4>
+                            <p>File > New > Templates</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Template Manager</h4>
+                            <p>File > Templates > Manage Templates</p>
+                        </div>
+                    </div>
+
+                    <h3>Template Categories</h3>
+                    <div class="style-categories">
+                        <div class="style-category">
+                            <h3>📄 Business</h3>
+                            <p>Letters, invoices, reports, business cards, resumes</p>
+                        </div>
+                        <div class="style-category">
+                            <h3>🎓 Educational</h3>
+                            <p>Essays, research papers, lesson plans, certificates</p>
+                        </div>
+                        <div class="style-category">
+                            <h3>📰 Publications</h3>
+                            <p>Newsletters, brochures, flyers, magazines</p>
+                        </div>
+                        <div class="style-category">
+                            <h3>📋 Forms</h3>
+                            <p>Applications, surveys, questionnaires, checklists</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Creating Custom Templates</h2>
+                    
+                    <h3>Method 1: From Existing Document</h3>
+                    <div class="step-by-step">
+                        <div class="step">
+                            <h4>Step 1: Design Document</h4>
+                            <p>Create and format document with desired layout, styles, and content</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 2: Save as Template</h4>
+                            <p>File > Templates > Save as Template</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 3: Name and Categorize</h4>
+                            <p>Enter template name and select category</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 4: Set as Default (Optional)</h4>
+                            <p>Check "Set as default template" if desired</p>
+                        </div>
+                    </div>
+
+                    <h3>Method 2: Template Wizard</h3>
+                    <ol>
+                        <li>File > Wizards > Choose document type</li>
+                        <li>Follow guided steps for layout and content</li>
+                        <li>Customize styles and formatting</li>
+                        <li>Save result as template</li>
+                    </ol>
+
+                    <h3>Template Elements to Include</h3>
+                    <ul>
+                        <li><strong>Custom styles:</strong> Paragraph, character, and page styles</li>
+                        <li><strong>Headers/Footers:</strong> Logo, contact info, page numbers</li>
+                        <li><strong>Placeholder text:</strong> Guide content creation</li>
+                        <li><strong>Auto text entries:</strong> Common phrases and addresses</li>
+                        <li><strong>Document properties:</strong> Author, keywords, description</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Managing Templates</h2>
+                    
+                    <h3>Template Manager</h3>
+                    <p>Access comprehensive template management through File > Templates > Manage Templates</p>
+                    
+                    <h4>Available Actions:</h4>
+                    <ul>
+                        <li><strong>Import:</strong> Add templates from other sources</li>
+                        <li><strong>Export:</strong> Share templates with others</li>
+                        <li><strong>Edit:</strong> Modify existing templates</li>
+                        <li><strong>Delete:</strong> Remove unwanted templates</li>
+                        <li><strong>Set Default:</strong> Choose default template for new documents</li>
+                        <li><strong>Reset Default:</strong> Return to standard blank document</li>
+                    </ul>
+
+                    <h3>Organizing Templates</h3>
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>Create Categories</h4>
+                            <p>Right-click in template manager to add new categories</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Move Templates</h4>
+                            <p>Drag templates between categories for organization</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Rename</h4>
+                            <p>Right-click template to rename or change description</p>
+                        </div>
+                    </div>
+
+                    <h3>Template Locations</h3>
+                    <p>Templates are stored in different locations based on their scope:</p>
+                    <ul>
+                        <li><strong>User templates:</strong> Personal templates in user profile</li>
+                        <li><strong>System templates:</strong> Shared templates for all users</li>
+                        <li><strong>Extension templates:</strong> Templates from installed extensions</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Using Templates Effectively</h2>
+                    
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li><strong>Plan structure:</strong> Define sections and content flow before creating</li>
+                        <li><strong>Use descriptive names:</strong> Clear template names aid in selection</li>
+                        <li><strong>Include instructions:</strong> Add comments or placeholder text as guides</li>
+                        <li><strong>Test thoroughly:</strong> Verify template works across different scenarios</li>
+                        <li><strong>Version control:</strong> Keep updated versions and archive old ones</li>
+                    </ul>
+
+                    <h3>Updating Templates</h3>
+                    <ol>
+                        <li>Open existing template for editing</li>
+                        <li>Make necessary changes to layout or styles</li>
+                        <li>File > Templates > Save as Template</li>
+                        <li>Use same name to overwrite existing template</li>
+                        <li>Choose whether to update documents based on template</li>
+                    </ol>
+
+                    <h3>Sharing Templates</h3>
+                    <p>Share templates with colleagues or students:</p>
+                    <ul>
+                        <li><strong>Export:</strong> Create .ott files for email or network sharing</li>
+                        <li><strong>Online repositories:</strong> Upload to template sharing websites</li>
+                        <li><strong>Network templates:</strong> Store on shared drives for organization access</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-content topic-page" id="tableOfContents">
+            <div class="topic-content">
+                <h1>Table of Contents</h1>
+                
+                <section class="content-section">
+                    <h2>What is a Table of Contents?</h2>
+                    <p>A Table of Contents (TOC) is an automatically generated list of document headings with corresponding page numbers. It provides readers with a quick overview of document structure and enables easy navigation to specific sections.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>📚 Benefits of TOC</h3>
+                        <ul>
+                            <li><strong>Navigation:</strong> Quick access to any section of the document</li>
+                            <li><strong>Overview:</strong> Shows document structure at a glance</li>
+                            <li><strong>Professional appearance:</strong> Adds polish to formal documents</li>
+                            <li><strong>Automatic updates:</strong> Page numbers update when content changes</li>
+                            <li><strong>Hyperlinks:</strong> Clickable links in digital documents</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Prerequisites for TOC</h2>
+                    <p>Before creating a table of contents, your document must be properly structured with heading styles.</p>
+                    
+                    <h3>Using Heading Styles</h3>
+                    <div class="step-by-step">
+                        <div class="step">
+                            <h4>Step 1: Apply Heading Styles</h4>
+                            <p>Select chapter/section titles and apply Heading 1, Heading 2, etc.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 2: Maintain Hierarchy</h4>
+                            <p>Use Heading 1 for main chapters, Heading 2 for sections, Heading 3 for subsections</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 3: Verify Style Application</h4>
+                            <p>Check that all headings show correctly in Navigator (F5)</p>
+                        </div>
+                    </div>
+
+                    <h3>Heading Style Guidelines</h3>
+                    <ul>
+                        <li><strong>Consistency:</strong> Apply heading styles uniformly throughout document</li>
+                        <li><strong>Hierarchy:</strong> Don't skip heading levels (e.g., Heading 1 directly to Heading 3)</li>
+                        <li><strong>Manual formatting:</strong> Avoid manual bold/size changes; modify heading styles instead</li>
+                        <li><strong>Outline levels:</strong> Each heading style has an associated outline level for TOC generation</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Creating a Table of Contents</h2>
+                    
+                    <h3>Basic TOC Creation</h3>
+                    <div class="step-by-step">
+                        <div class="step">
+                            <h4>Step 1: Position Cursor</h4>
+                            <p>Place cursor where you want the TOC (usually after title page)</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 2: Insert TOC</h4>
+                            <p>Insert > Table of Contents and Index > Table of Contents, Index or Bibliography</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 3: Configure Settings</h4>
+                            <p>Choose title, protected against changes, and outline levels</p>
+                        </div>
+                        <div class="step">
+                            <h4>Step 4: Click OK</h4>
+                            <p>Writer generates TOC based on heading styles in document</p>
+                        </div>
+                    </div>
+
+                    <h3>TOC Dialog Options</h3>
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>Type Tab</h4>
+                            <p>Title, type, protected status, evaluation level</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Entries Tab</h4>
+                            <p>Structure, formatting, tab stops, hyperlinks</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Styles Tab</h4>
+                            <p>Paragraph styles for each TOC level</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Columns Tab</h4>
+                            <p>Multi-column TOC layout options</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Background Tab</h4>
+                            <p>Background color or image for TOC</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Customizing Table of Contents</h2>
+                    
+                    <h3>Adjusting TOC Levels</h3>
+                    <p>Control which heading levels appear in TOC:</p>
+                    <ul>
+                        <li><strong>Evaluate up to level:</strong> Set maximum heading level (1-10)</li>
+                        <li><strong>Create from:</strong> Choose to use outline levels or specific styles</li>
+                        <li><strong>Additional styles:</strong> Include custom paragraph styles in TOC</li>
+                    </ul>
+
+                    <h3>Formatting TOC Entries</h3>
+                    <p>Customize appearance of TOC entries on Entries tab:</p>
+                    <ul>
+                        <li><strong>Structure line:</strong> Define entry format with tokens (E# = entry text, T = tab stop, # = page number)</li>
+                        <li><strong>Tab stops:</strong> Position and alignment of page numbers</li>
+                        <li><strong>Character styles:</strong> Apply formatting to specific tokens</li>
+                        <li><strong>Fill character:</strong> Dots, dashes, or other characters between text and page numbers</li>
+                    </ul>
+
+                    <h3>TOC Styles</h3>
+                    <p>Each TOC level uses a specific paragraph style:</p>
+                    <ul>
+                        <li><strong>Contents 1:</strong> Style for first-level headings in TOC</li>
+                        <li><strong>Contents 2:</strong> Style for second-level headings in TOC</li>
+                        <li><strong>Contents 3:</strong> Style for third-level headings in TOC</li>
+                        <li><strong>Modify styles:</strong> Change fonts, indentation, spacing for each level</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Managing Table of Contents</h2>
+                    
+                    <h3>Updating TOC</h3>
+                    <p>When document content changes, update the TOC:</p>
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <h4>Right-click Method</h4>
+                            <p>Right-click inside TOC > Update Index/Table</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Menu Method</h4>
+                            <p>Tools > Update > All Indexes and Tables</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Keyboard Shortcut</h4>
+                            <p>F9 key updates current field or index</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>Automatic Update</h4>
+                            <p>Enable in TOC properties for live updates</p>
+                        </div>
+                    </div>
+
+                    <h3>Editing TOC Properties</h3>
+                    <ol>
+                        <li>Right-click anywhere in TOC</li>
+                        <li>Select "Edit Index/Table"</li>
+                        <li>Modify settings in dialog</li>
+                        <li>Click OK to apply changes</li>
+                    </ol>
+
+                    <h3>Deleting TOC</h3>
+                    <ol>
+                        <li>Right-click anywhere in TOC</li>
+                        <li>Select "Delete Index/Table"</li>
+                        <li>Confirm deletion when prompted</li>
+                    </ol>
+                </section>
+
+                <section class="content-section">
+                    <h2>Advanced TOC Features</h2>
+                    
+                    <h3>Multiple Tables of Contents</h3>
+                    <p>Create different TOCs for different purposes:</p>
+                    <ul>
+                        <li><strong>Partial TOC:</strong> TOC for specific document sections</li>
+                        <li><strong>Table of Figures:</strong> List of images and captions</li>
+                        <li><strong>Table of Tables:</strong> List of tables in document</li>
+                        <li><strong>Custom TOC:</strong> Based on specific paragraph styles</li>
+                    </ul>
+
+                    <h3>Hyperlinked TOC</h3>
+                    <p>Create clickable TOC entries:</p>
+                    <ol>
+                        <li>In TOC dialog, go to Entries tab</li>
+                        <li>Click in structure line before "E#" token</li>
+                        <li>Click "Hyperlink" button (LS)</li>
+                        <li>Click after "E#" token and insert "Hyperlink end" (LE)</li>
+                        <li>TOC entries become clickable links to headings</li>
+                    </ol>
+
+                    <h3>TOC in Master Documents</h3>
+                    <p>For large documents split into subdocuments:</p>
+                    <ul>
+                        <li><strong>Master TOC:</strong> Includes headings from all subdocuments</li>
+                        <li><strong>Cross-references:</strong> Page numbers span entire master document</li>
+                        <li><strong>Automatic updates:</strong> Reflects changes in any subdocument</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
